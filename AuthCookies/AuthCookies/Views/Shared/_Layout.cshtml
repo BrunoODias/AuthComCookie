@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuthCookies</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <hr />
+            <a href="/Home/Anonymous" class="mt-3 btn btn-primary">Go to Anonymous</a>
+
+            <hr />
+
+            <a href="/Home/AddSimpleCookie" class="btn btn-primary">Add Simple Cookie</a>
+            <a href="/Home/Authenticated" class="btn btn-primary">Go to Authenticated</a>
+
+            <hr />
+
+            <a href="/Home/AddSuperUserCookie" class="btn btn-primary">Add Super User Cookie</a>
+            <a href="/Home/Authorized" class="btn btn-primary">Go to Authorized(Super User)</a>
+
+            <hr />
+
+            <a href="/Home/RemoveCookies" class="mt-3 btn btn-danger">Remove Cookies</a>
+
+        </nav>
+    </header>
+    <div class="w-100 my-5" style="text-align: center;">
+        <span class="alert-primary p-2" style="font-size: 2rem;">
+            @RenderBody()
+        </span>
+    </div>
+</body>
+</html>
